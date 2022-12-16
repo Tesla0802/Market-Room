@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+body{
+    background-color: #1D1D1D;
+}
+
+.nav{
+    width: 100%;
+    height: 4rem;
+    background-color: #1D1D1D80;
+    position: fixed;
+    z-index: 101;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+}
+
+.nav .navigation li{
+    margin: 0.8rem;
+}
+
+.nav .navigation li a{
+    color: #00755D;
+    font-size: 1.5rem;
+    transition: all ease 0.3;
+}
+.nav .navigation li a img{
+    width: 4rem;
+    height: 4rem;
+    margin-top: 1rem;
+}
+
+.nav .navigation li a:hover{
+    font-size: 1.8rem;
+    color: #F26301;
+    transition: all ease 0.3;
+}
+.box{
+    position: relative;
+}
+
+.input {
+    padding: 10px;
+    width: 80px;
+    height: 80px;
+    background: none;
+    border: 4px solid #00755D;
+    border-radius: 50px;
+    box-sizing: border-box;
+    font-family: Comic Sans MS;
+    font-size: 26px;
+    color: #ffd52d;
+    outline: none;
+    transition: .5s;
+}
+.box:hover input{
+    width: 350px;
+    background: #1d1d1d;
+    border-radius: 10px;
+}
+.box i{
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translate(-50%,-50%);
+    font-size: 26px;
+    color: #00755D;
+    transition: .2s;
+}
+.box:hover i{
+    opacity: 0;
+    z-index: -1;
+}
