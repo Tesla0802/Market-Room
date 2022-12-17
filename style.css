@@ -193,3 +193,37 @@ body{
     border: 0.2rem solid #ffb7c5;
     transition: all ease 0.3s;
 }
+
+/** slider */
+
+#main-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    max-width: 1170px;
+    width: 100%;
+  }
+  
+  .swiper-button-next,
+  .swiper-button-prev {
+    position: static !important;
+    transform: translate(0, 0);
+    margin: 10px 0px 0px 20px !important;
+  }
+  
+  .slider-btns {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 1170px;
+    width: 100%;
+    margin: 10px auto 0px auto;
+  }
+  
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: 25px !important;
+    font-weight: 800;
+    color: #009c7c;
+  }
+  
