@@ -13,8 +13,15 @@ li{
 a{
     text-decoration: none;
 }
+
+body::-webkit-scrollbar {
+    display: none;
+  }
+
 body{
     background-color: #1D1D1D;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 .nav{
@@ -38,7 +45,7 @@ body{
 }
 
 .nav .navigation li a{
-    color: #00755D;
+    color: #ffb7c5;
     font-size: 1.5rem;
     transition: all ease 0.3;
 }
@@ -50,42 +57,105 @@ body{
 
 .nav .navigation li a:hover{
     font-size: 1.8rem;
-    color: #F26301;
-    transition: all ease 0.3;
+    color: #00755D;
+    transition: all ease 0.3s;
 }
 .box{
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .input {
     padding: 10px;
-    width: 80px;
-    height: 80px;
+    width: 3rem;
+    height: 3rem;
     background: none;
-    border: 4px solid #00755D;
+    border: 4px solid #ffb7c5;
     border-radius: 50px;
     box-sizing: border-box;
-    font-family: Comic Sans MS;
+    font-family: 'Roboto', sans-serif;
     font-size: 26px;
-    color: #ffd52d;
+    color: #ffb7c5;
     outline: none;
-    transition: .5s;
+    transition: all ease 0.5s;
 }
+
 .box:hover input{
     width: 350px;
     background: #1d1d1d;
     border-radius: 10px;
 }
+
 .box i{
     position: absolute;
     top: 50%;
-    right: 15px;
+    left: 1.5rem;
     transform: translate(-50%,-50%);
-    font-size: 26px;
-    color: #00755D;
-    transition: .2s;
+    font-size: 1.5rem;
+    color: #ffb7c5;
+    transition: all ease 0.2s;
 }
+
 .box:hover i{
     opacity: 0;
     z-index: -1;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 20rem;
+    height: 40rem;
+    background-color: transparent;
+    color: #ffb7c5;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+    position: relative;
+    margin-top: 8rem;
+    box-shadow: #ffb7c580 5px 5px 25px 10px;
+}
+
+.card-img img{
+    width: 15rem;
+    height: 15rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    border-radius: 2rem;
+}
+
+.card-title{
+    width: 80%;
+    margin: 1rem;
+}
+
+.card-price{
+    margin-left: 1rem;
+}
+
+.card-buy-btn button{
+    width: 15rem;
+    color: #ffb7c5;
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-size: 2rem;
+    border: 0.2rem solid #ffb7c5;
+    border-radius: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 0.5rem;
+    margin-left: 2.5rem;
+}
+
+.card-buy-btn button:hover{
+    background-color: #ffb7c5;
+    color: #1D1D1D;
+    border: 0.2rem solid #ffb7c5;
+    transition: all ease 0.3s;
 }
