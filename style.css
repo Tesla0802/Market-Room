@@ -14,6 +14,11 @@ a{
     text-decoration: none;
 }
 
+::selection {
+    background-color: #ffb7c5;
+    color: #1d1d1d;
+  }
+
 body::-webkit-scrollbar {
     display: none;
   }
