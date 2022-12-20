@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Macondo+Swash+Caps&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
+
 *{
     margin: 0px;
     padding: 0px;
-    font-family: 'Macondo Swash Caps', cursive;
+    font-family: sans-serif;
 }
 
 li{
