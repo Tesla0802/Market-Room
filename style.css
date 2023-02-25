@@ -134,7 +134,7 @@ body{
     z-index: -1;
 }
 
-.center{
+#displayPost{
     /* display: grid;
     grid-template-columns: repeat(3, 0.2fr); */
     display: flex;
@@ -360,4 +360,37 @@ body{
   
   footer{
     margin: 10rem;
+  }
+
+  /*? post */
+
+  .addPost{
+    width: 40rem;
+    height: 30rem;
+    background-color: #00755e80;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: 10rem;
+    margin-left: 40rem;
+  }
+
+  main .addPost button {
+    width: 100%;
+  }
+  
+  main .displayPosts {
+    width: 100%;
+    display: grid !important;
+    place-items: center;
+  }
+  
+  main .displayPosts article {
+    width: 90%;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
   }

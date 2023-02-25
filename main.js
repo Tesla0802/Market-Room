@@ -56,3 +56,12 @@ let scrollPrecentage = () => {
       $(".navigation").removeClass("fix-icon");
     }
   });
+
+  function displayAlert(title, text, icon) {
+    Swal.fire({
+      icon: icon,
+      text: text,
+      title: title,
+    });
+  }
+  

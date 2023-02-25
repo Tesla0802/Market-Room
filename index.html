@@ -10,7 +10,7 @@
       href="./img/Market Room png.png"
       type="image/x-icon"
     />
-    <!-- font-awesome CDN -->
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./swiper-bundle.min.css">
     <link rel="stylesheet" href="./style.css" />
@@ -25,15 +25,19 @@
           <li>
             <a href="#"><img src="./img/Market Room png.png" alt="" /></a>
           </li>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">upload</a></li>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./post.html">upload</a></li>
           <li><a href="#">purcheses</a></li>
           <li><a href="#">profile</a></li>
           <li><div class="box">
+            <article class="searc">
             <form name="search">
-                <input type="text" class="input" name="txt" onmouseout="this.value = ''; this.blur();">
+                <input id="searchInput" type="text" class="input" name="txt" onmouseout="this.value = ''; this.blur();">
             </form>
-            <i class="fa-solid fa-magnifying-glass"></i></li>
+            <div id="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          </article></li>
         </ul>
       </div>
     </header>
@@ -249,6 +253,7 @@
   
       <section class="left"></section>
       <section class="center">
+        <article id="displayPost">
         <div class="card">
           <div class="card-img"><img src="./img/Market Room.png" alt=""></div>
           <div class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
@@ -266,7 +271,9 @@
           <div class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
           <div class="card-buy-btn"><button><div class="card-price">400₾</div> Buy <i class="fa-solid fa-arrow-right"></i></button></div>
         </div>
-        
+      </article>
+      <article class="displayAfter"></article>
+
       </section>
       <section class="right"></section>
     </main>
@@ -278,6 +285,7 @@
     <script src="./swiper-bundle.min.js.map"></script>
     <script src="./jQuery.js"></script>
     <script src="./firebase.js"></script>
+    <script src="./post.js"></script>
     <script src="./main.js"></script>
   </body>
 </html>
