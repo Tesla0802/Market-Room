@@ -144,28 +144,29 @@ body{
 }
 
 .card{
-    width: 20rem;
-    height: 30rem;
+    width: auto;
+    height: auto;
     background-color: transparent;
     color: #ffb7c5;
     border-radius: 2rem;
-    font-size: 1.2rem;
+    font-size: 2rem;
     position: relative;
     margin-top: 8rem;
     box-shadow: #ffb7c580 5px 5px 25px 10px;
 }
 
 .card-img img{
-    width: 15rem;
-    height: 15rem;
+    width: 20rem;
+    height: 20rem;
     margin-left: 2.5rem;
-    margin-top: 2rem;
+    margin: 2rem;
     border-radius: 2rem;
     background-size: cover;
+    object-fit: cover;
 }
 
 .card-title{
-    width: 80%;
+    width: 20rem;
     margin: 1rem;
     color: #ffb7c5;
 }
@@ -185,8 +186,7 @@ body{
     border-radius: 0.5rem;
     padding-left: 1rem;
     padding-right: 1rem;
-    margin-top: 0.5rem;
-    margin-left: 2.5rem;
+    margin: 2rem;
 }
 
 .card-buy-btn button:hover{
