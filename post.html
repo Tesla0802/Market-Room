@@ -43,34 +43,29 @@
       </div>
     </header>
     <main>
-        <section class="addPost">
-          <article>
-            <div class="mb-3">
-              <label for="title" class="form-label">Title</label>
-              <input
-                type="text"
-                class="form-control"
-                id="title"
-                placeholder="name..."
-              />
-            </div>
-            <div class="mb-3">
-              <label for="text" class="form-label">Price</label>
-              <input
-                type="text"
-                class="form-control"
-                id="price"
-                placeholder="price..."
-              />
-            </div>
-            <div class="mb-3">
-              <input type="file" class="form-control" id="image" />
-            </div>
-            <button class="btn btn btn-outline-success" id="button">
-              Add Post
-            </button>
-          </article>
-        </section>
+      <section class="addPost">
+        <article>
+          <div class="mb-3">
+            <label for="title" class="form-label">Title</label>
+            <input
+              type="text"
+              class="form-control"
+              id="title"
+              placeholder="Example..."
+            />
+          </div>
+          <div class="mb-3">
+            <label for="text" class="form-label">Text</label>
+            <textarea class="form-control" id="text" rows="3"></textarea>
+          </div>
+          <div class="mb-3">
+            <input type="file" class="form-control" id="image" />
+          </div>
+          <button class="btn btn btn-outline-success" id="button">
+            Add Post
+          </button>
+        </article>
+      </section>
       </main>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
       <script src="./swiper-bundle.min.js"></script>
